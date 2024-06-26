@@ -5,30 +5,14 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 const data = [
   {
     id: 1,
-    text: `This is a long description that will be truncated. It goes beyond 7 lines and will require the user to see mor
-    e to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u
-    t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-     commodo consequatThis is a long description that will be truncated. It goes beyond 7 lines and will require the user to 
-     see more to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-       consequatThis is a long description that will be truncated. It goes beyond 7 lines and will require the user to see more to view the ent
-    re the user to see more to view the entire content. Lorem ipsum dolor sit am
-    et, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
-    a commodo consequatThis is a long description that will be truncated. It goes beyond 7 lines and will require the 
-    user to see more to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com
-    modire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatThis is a long description that will be truncated. It 
-     goes beyond 7 lines and will require the user to see more to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-     ullamco laboris nisi ut aliquip ex ea commodo consequatThis is a long description that will be truncated. It goes beyond 7 lines and will require the user
-      to see more to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna al
-      iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatThis is a long description that will be truncated.
-       It goes beyond 7 lines and will require the user to see more to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatThis 
-       is a long description that will be truncated. It goes beyond 7 lines and will requi
-    o consequat.`,
+    text: `ቤተ አባ ሊባኖስ።
+    ቤተ አባ ሊባኖስ እንደሌሎች ውቅር አብያተ ክርስቲያናት ብቻውን የቆመ አይደለም ከአንድ ቋጥኝ ጋር የተያያዘ ነው።
+    ይህን ውቅር ህንጻ ያሰራችው የቅዱስ ላሊበላ ባለቤት እቴጌይቷ መስቀል ክብራ ናት።
+    የውስጡ ክፍል በአራት አምዶች የቆመ ነው።
+    ጻድቁ አባ ሊባኖስ ከሮም የመጡ ጻድቅ ናቸው አባ ሊባኖስ በደብረ ሮሃ አርባ አመት ሲጸልዩ ቆይተዋል፣ ከአርባ አመት በኋላ ደብረሊባኖስ ሂደው ገድመው ከቆዩ በኋላ ለአባታችን ለአቡነ ተክለሃይማኖት አስረክበው እረፍታቸው በዚሁ በደብረ ሮሃ ያደረጉ ጻድቅ አባት ናቸው።
+    ይህ በስማቸው የተሰራው ቤተ ክርስቲያን ለጻድቁ አባታችን እና ለእቴጌይቱ መስቀል ክብራ መታሰቢያ የተሰራ ድንቅ ቤተ መቅደስ ነው።
+   
+    `,
     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2Fimages%20(16).jpg?alt=media&token=87989dc2-f156-4da8-b794-585ab73160ac',
   },
   
@@ -40,16 +24,16 @@ const Item = ({ item }) => {
   const truncatedText = showFullText ? item.text : item.text.substring(0, 150) + '...'; // Adjust truncation length as needed
 
   return (
-    <View style={{ margin: 10 }}>
+    <View style={{ margin: 10 ,marginBottom:70}}>
       <ImageViewer
         imageUrls={[{ url: item.imageUrl }]}
         enableSwipeDown
-        renderIndicator={() => null} // Optional: Disable indicator
+        renderIndicator={() => null} 
         style={{ width: Dimensions.get('window').width, height: Dimensions.get('window').height / 2 }}
       />
       <Text>{truncatedText}</Text>
-      {item.text.length > 150 && ( // Only show button if text is long
-        <Button title={showFullText ? 'See Less' : 'See More'} onPress={() => setShowFullText(!showFullText)} />
+      {item.text.length > 150 && ( 
+        <Button title={showFullText ? 'በከፊል ይዩ' : 'ሙሉውን ይዩ'} onPress={() => setShowFullText(!showFullText)} />
       )}
     </View>
   );

@@ -5,30 +5,13 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 const data = [
   {
     id: 1,
-    text: `This is a long description that will be truncated. It goes beyond 7 lines and will require the user to see mor
-    e to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u
-    t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-     commodo consequatThis is a long description that will be truncated. It goes beyond 7 lines and will require the user to 
-     see more to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-       consequatThis is a long description that will be truncated. It goes beyond 7 lines and will require the user to see more to view the ent
-    re the user to see more to view the entire content. Lorem ipsum dolor sit am
-    et, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
-    a commodo consequatThis is a long description that will be truncated. It goes beyond 7 lines and will require the 
-    user to see more to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com
-    modire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatThis is a long description that will be truncated. It 
-     goes beyond 7 lines and will require the user to see more to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-     ullamco laboris nisi ut aliquip ex ea commodo consequatThis is a long description that will be truncated. It goes beyond 7 lines and will require the user
-      to see more to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna al
-      iqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatThis is a long description that will be truncated.
-       It goes beyond 7 lines and will require the user to see more to view the entire content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatThis 
-       is a long description that will be truncated. It goes beyond 7 lines and will requi
-    o consequat.`,
+    text: `ቤተ አማኑኤል።
+  ቅዱስ ላሊበላ ከሃያ ሶስት አመት ስራ ውስጥ አስር አመት የፈጀበት ስራ ይህ ነው።
+  የቤተ አማኑኤል የመስኮቶቹ ቅርጽ የአክሱም ሃዉልት ምሳሌዎች ናቸው። 
+  ቤተ አማኑኤል በስፋቱ ከቤተ መዳህኒ አለም ቀጥሎ ሁለተኛ ነው።
+  ቤተ አማኑኤል በሰማያዊት እየሩሳሌም በጽረ አርያም ይመሰላል፣
+  ቤተ አማኒኤል እንደ ቤተ ማርያም ባለፎቅ ህንጻ ነው። ቤተ አማኑኤል በአራት አምዶች የቆመ ነው የአራቱ ወንጌላዉያን ምሳሌ ነው።
+  `,
     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2Fimages%20(12).jpg?alt=media&token=2c9b2ecd-7555-4760-81f3-35c8aaa5d6f0',
   },
   
@@ -40,16 +23,16 @@ const Item = ({ item }) => {
   const truncatedText = showFullText ? item.text : item.text.substring(0, 150) + '...'; // Adjust truncation length as needed
 
   return (
-    <View style={{ margin: 10 }}>
+    <View style={{ margin: 10,marginBottom:70 }}>
       <ImageViewer
         imageUrls={[{ url: item.imageUrl }]}
         enableSwipeDown
-        renderIndicator={() => null} // Optional: Disable indicator
+        renderIndicator={() => null} 
         style={{ width: Dimensions.get('window').width, height: Dimensions.get('window').height / 2 }}
       />
       <Text>{truncatedText}</Text>
-      {item.text.length > 150 && ( // Only show button if text is long
-        <Button title={showFullText ? 'See Less' : 'See More'} onPress={() => setShowFullText(!showFullText)} />
+      {item.text.length > 150 && ( 
+        <Button title={showFullText ? 'በከፊል ይዩ' : 'ሙሉውን ይዩ'} onPress={() => setShowFullText(!showFullText)} />
       )}
     </View>
   );

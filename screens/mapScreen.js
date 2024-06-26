@@ -38,10 +38,10 @@ export default function MapScreen() {
     <View style={styles.container}>
       <MapView
         style={styles.map}
-        mapType="terrain"
+        mapType="satellite"
         initialRegion={{
-          latitude: 12.03378178067668,  
-          longitude: 39.044016190010545,
+          latitude: 12.03408,  
+          longitude: 39.04487,
           latitudeDelta: 0.009,
           longitudeDelta: 0.009,
         }}
@@ -54,8 +54,8 @@ export default function MapScreen() {
         )}
         <Marker
           coordinate={{
-            latitude: 12.0321900, 
-            longitude: 39.0475600, 
+            latitude: 12.03408, 
+            longitude: 39.04487, 
           }}
           title={"Lalibela"}
         />
@@ -64,8 +64,8 @@ export default function MapScreen() {
             mode={"DRIVING"}
             origin={userLocation}
             destination={{
-              latitude: 12.0321900, 
-              longitude: 39.0475600,
+              latitude: 12.03408, 
+              longitude: 39.04487,
             }}
             apikey={"aK8Pz3gxPWDdBAI5giCy3IdFVcBEpeaTJnvlueHLz2L2HHNPEYPmku1STE0r"}
             strokeWidth={3}
@@ -76,16 +76,7 @@ export default function MapScreen() {
           />
         )}
       </MapView>
-      <ScrollView>
-        <Text style={{ fontSize: 18 }}>
-          Duration:{" "}
-          {directionResult != null ? directionResult.duration : "loading..."} hours
-        </Text>
-        <Text style={{ fontSize: 18 }}>
-          Distance:{" "}
-          {directionResult != null ? directionResult.distance : "loading..."} KM
-        </Text>
-      </ScrollView>
+      
     </View>
   );
 }

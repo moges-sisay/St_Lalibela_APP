@@ -9,7 +9,7 @@ import Harbe from './Page/st.harbe';
 function MenuComponent() {
   const navigation = useNavigation();
   return (
-    <View style={{display:"flex",flexDirection:"row"}}>
+    <View style={{display:"flex",flexDirection:"row",marginBottom:70}}>
       <View style={{display:"flex",flexDirection:"row"}}>
           <View style={{display:"flex",flexDirection:"column",gap:10}}>
           <TouchableHighlight onPress={() => navigation.navigate('lalibela')}>
@@ -17,7 +17,7 @@ function MenuComponent() {
               style={styles.images}
               source={{
                 uri:
-                  'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2FBete_Ghiorghis_(Huis_van_de_heilige_George)%2C_de_best_bewaard_gebleven_kerk_(6821637099).jpg?alt=media&token=608cb825-17b1-41d3-821b-440a5ed4f7b8',
+                  'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2Fd8.jpg?alt=media&token=6dfca9c8-5892-4943-8603-285b24faf397',
               }}
             />
           </TouchableHighlight>
@@ -27,7 +27,7 @@ function MenuComponent() {
               style={styles.images}
               source={{
                 uri:
-                  'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/yimriha%2Feth-yemre-decorated-windows-det-2012.jpg?alt=media&token=864c62ad-7498-46ae-bef7-37f6fc9bc189',
+                  'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2FScreenshot%202054.png?alt=media&token=69d70dd2-fca9-4e99-ae2c-b178b21a5e33',
               }}
             />
           </TouchableHighlight>
@@ -49,7 +49,7 @@ function MenuComponent() {
             style={styles.images}
             source={{
               uri:
-                'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/neakutoleab%2F437146608_436617595688700_8046965790600286092_n.jpg?alt=media&token=0a5d4949-38e5-44d7-ac79-914728a65eac',
+                'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2Fchurch-inside-the-cave%20(1).jpg?alt=media&token=f0aa64f0-9aa2-40a8-afa4-45d1dfee119e',
             }}
           />
           </TouchableHighlight>
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     width:200,
     height:200,
     resizeMode:"contain",
-    margin:10,
+    margin:1,
     backgroundColor:"black"
   },
 });

@@ -5,7 +5,15 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 const data = [
   {
     id: 1,
-    text: `ከቤተ ማርያም በስተ ደቡብ ምዕራብ ስንወጣ ቤተ ደናግል ቤተክርስቲያን ይገኛል።
+    text: `ቤተ ደናግል።
+    ከቤተ ማርያም በስተ ደቡብ ምዕራብ ስንወጣ ቤተ ደናግል ቤተክርስቲያን ይገኛል።
+    ይችን ቤተ ደናግል ብሎ ያነጻት ቤተ መቅደስ የሰላሳ ስድስቱ ቅዱሳን አንስት መታሰቢያ ነት።
+    ከቤተ መቅደሱና ከቤተ ምቅደሱ ውጭ አራት አምዶች ይገኛሉ። አራት መሆናቸው የአራቱ ወንጌላዉያን ምሳሌ ናቸው።
+    ቤተ ደናግል ወጣ ብሎ ወደ ቤተ ማርያም አንገቱን ያዘነበለ ዘውድ ይመስላል። 
+    ዘውድ የመሰለበት ምክኒያት እግዚያብሄር ለደናግላኑ የሚሰጣቸውን የንጽህና አክሊል ለማምልከት ነው።
+    በቤተ ደናግል ከውጭ አንድ አምድ ለብቻው አለ። 
+    ይሀውም ለደናግል መመክያ የሆነች የእመቤታችን የቅድስት ድንግል ማርያም ምሳሌ ነው።  በዚህ ቤተ መቅደስ የሰላሳ ስድስቱ ደናግላን ጽላት አለ። 
+     በዚሁ ጊቢ ውስጥ መነኮሳት መገበሪያ የሚፍጩባቸው የኩም ወፍጮውች አሉ።ከቤተ ማርያም በስተ ደቡብ ምዕራብ ስንወጣ ቤተ ደናግል ቤተክርስቲያን ይገኛል።
     ይችን ቤተ ደናግል ብሎ ያነጻት ቤተ መቅደስ የሰላሳ ስድስቱ ቅዱሳን አንስት መታሰቢያ ነት።
     ከቤተ መቅደሱና ከቤተ ምቅደሱ ውጭ አራት አምዶች ይገኛሉ። አራት መሆናቸው የአራቱ ወንጌላዉያን ምሳሌ ናቸው።
     ቤተ ደናግል ወጣ ብሎ ወደ ቤተ ማርያም አንገቱን ያዘነበለ ዘውድ ይመስላል። 
@@ -24,7 +32,7 @@ const Item = ({ item }) => {
   const truncatedText = showFullText ? item.text : item.text.substring(0, 150) + '...'; // Adjust truncation length as needed
 
   return (
-    <View style={{ margin: 10 }}>
+    <View style={{ margin: 10,marginBottom:70 }}>
       <ImageViewer
         imageUrls={[{ url: item.imageUrl }]}
         enableSwipeDown
@@ -33,7 +41,7 @@ const Item = ({ item }) => {
       />
       <Text>{truncatedText}</Text>
       {item.text.length > 150 && ( 
-        <Button title={showFullText ? 'See Less' : 'See More'} onPress={() => setShowFullText(!showFullText)} />
+        <Button title={showFullText ? 'በከፊል ይዩ' : 'ሙሉውን ይዩ'} onPress={() => setShowFullText(!showFullText)} />
       )}
     </View>
   );

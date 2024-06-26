@@ -18,84 +18,101 @@ function Lalibela() {
     const images = [
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2F347384806_651949193629819_2342310311102097919_n.jpg?alt=media&token=d0af3c67-dfe9-4000-8546-b83177a6852f',
-            description: "Rock-hewn church in Lalibela"
+            description: "አናጼ መቅደስ ቅዱስ ላሊበላ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2F347567389_1012507333258710_14777760138721996_n.jpg?alt=media&token=f189d324-c5a4-432d-843b-3eba103c6335',
-            description: "Priests in traditional attire"
+            description: "ብልባላ ቅዱስ ጌወጊስ ላስታ ላሊበላ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2F1678296666841.jpg?alt=media&token=3638105f-4dd1-48df-9ab7-68c7c1aa19e8',
-            description: "Interior of a church"
+            description: "የላሊበላ ውስጣዊ ክፍል"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2Fimages%20(24).jpg?alt=media&token=5d85391b-1dd7-49e4-80af-bc7d6a542daa',
-            description: "Iconography inside a church"
+            description: "ቤተ ደናግል ውጫዊ ክፍል"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2F446814398_467301179287008_6947383595516018739_n.jpg?alt=media&token=b3402a55-2ad3-4c08-8fd5-d3c078779591',
-            description: "Ancient carvings on church walls"
+            description: "አፍሮ አይገባ መስቀል"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2FFB_IMG_1669394825999%20(1).jpg?alt=media&token=fdf2e9b2-79e9-4119-b6f4-d936f963ada4',
-            description: "Sunset view of Lalibela"
+            description: "ተከዜ ኪዳነ ምህረት ላስታ ላሊበላ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2Feth-yemre-main-church-building-int-with-priest-2012.jpg?alt=media&token=96b0809a-edbd-45f0-a87e-f93fcbcfc377',
-            description: "Priest inside a church"
+            description: "የላሊበላ ውስጣዊ ክፍል"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2Fimages%20(5).jpg?alt=media&token=1736fb53-4cf7-4d29-945e-d9c32a7f42ad',
-            description: "Exterior view of a church"
+            description: "በጻድቁ ቅዱስ ላሊበላ የተቀረጸ ስዕል"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2Fimages%20(12).jpg?alt=media&token=2c9b2ecd-7555-4760-81f3-35c8aaa5d6f0',
-            description: "Pilgrims visiting Lalibela"
+            description: "ቤተ አማኑኤል ላሊበላ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2Fimages%20(9).jpg?alt=media&token=1bcda4a0-79ef-4d1c-8cd5-3de08c2ee865',
-            description: "Lalibela's rock-hewn churches"
+            description: "ገነተ ማሪያም ላስታ ላሊበላ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2FFB_IMG_1668586571652.jpg?alt=media&token=022d5745-faa3-4e0f-b8cf-eab9a5aceb1c',
-            description: "Lalibela's rock-hewn churches"
+            description: "ቤተ ደብረ ሲና ወጎለጎልታ ላሊበላ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2F1672511910274.jpg?alt=media&token=7dce40b0-64f7-4203-8bcb-ef8871961b2d',
-            description: "Lalibela's rock-hewn churches"
+            description: "ቤተ ገብርኤል ላሊበላ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2Fdownload%20(2).jpg?alt=media&token=d72e90cb-af44-468f-b384-fcda30a8c44d',
-            description: "Lalibela's rock-hewn churches"
+            description: "ይምርሃነ ክርስቶስ ውስጣዊ ክፍል"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2FFB_IMG_1668586556514_1.jpg?alt=media&token=25660b8b-fd89-48f1-b9f7-d18d3ee5a586',
-            description: "Lalibela's rock-hewn churches"
+            description: "ቤተ ጌወርጊስ ላሊበላ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2F358433837_1626564994436545_6956188362352656053_n.jpg?alt=media&token=b706e227-71de-42c2-b3eb-837344b6b7f6',
-            description: "Lalibela's rock-hewn churches"
+            description: "ቅዱስ ሃርቦይ ዊጫዊ ክፍል"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2F354631553_652669690224436_2981900290183456435_n.jpg?alt=media&token=357dab54-0f73-4bd3-82c4-c18bf105de5f',
-            description: "Lalibela's rock-hewn churches"
+            description: "ዕንቁ ይምርሃነ ክርስቶስ ውስጥ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2F1680495072655.jpg?alt=media&token=3f658bd0-e948-4aef-b558-e167927b26b9',
-            description: "Lalibela's rock-hewn churches"
+            description: "እመኪና መዳህኒ አለም ላስታ ላሊበላ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2F1680495066815.jpg?alt=media&token=1452aca5-eaed-48c8-bbcf-755540beb5fa',
-            description: "Lalibela's rock-hewn churches"
+            description: "እመኪና ልደታ ላስታ ላሊበላ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2F431565873_423559873661139_1911061821616459422_n.jpg?alt=media&token=4daf0975-1edb-472b-8a68-2393a62f5348',
-            description: "Lalibela's rock-hewn churches"
+            description: "የሃዏሪያት ምስል በላሊበላ የተሰራ"
         },
         {
             uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/images%2FETH%20Yemre-2.jpg?alt=media&token=e2f7a962-d35d-40b3-b4ab-8fcd7e040769',
-            description: "Lalibela's rock-hewn churches"
+            description: "የላሊበላ ውስጣዊ ክፍል"
+        },
+        {
+            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2FScreenshot%202024-06-26%20180023.png?alt=media&token=87ced40b-0641-4e52-98b7-ea12cebcde25',
+            description: "አሽተን ማሪያም ላሊበላ"
+        },
+        {
+            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2FScreenshot%202024-063548.png?alt=media&token=916ff058-d8c1-42d8-b824-e7f81459d6d0',
+            description: "ዕንቁ ይምርሃነ ክርስቶስ ውስጥ"
+        },
+        {
+            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2Fmonastery-of-na-akuto%20(2).jpg?alt=media&token=432af4ff-6a6f-4e0c-b2f1-f9b9868572cf',
+            description: "የስውሩ ናኩቶላአብ ጸበል ማጠራቀሚያ"
+        },
+        {
+            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2FScreens17.png?alt=media&token=7a654f58-319b-4c33-a1e3-deaa6196d855',
+            description: "ቅዱስ ላሊበላ የሰራዉ ውስጣዊ አምድ"
         }
+        
     ];
 
     const openImageModal = (index) => {
@@ -144,9 +161,9 @@ function Lalibela() {
     return (
         <SafeAreaProvider>
             <ScrollView>
-                <View style={{ display: "flex", flexDirection: "row", paddingTop: insets.top + 10 }}>
+                <View style={{ display: "flex", flexDirection: "row", paddingTop: insets.top + 10,marginBottom:70 }}>
                     <View>
-              {images.slice(0, 10).map((image, index) => (
+              {images.slice(0, 12).map((image, index) => (
                   <View key={index}>
                       <TouchableOpacity onPress={() => openImageModal(index)}>
                           <Image style={styles.images} source={{ uri: image.uri }} />
@@ -170,7 +187,7 @@ function Lalibela() {
               ))}
                     </View>
                     <View style={{ marginLeft: 10 }}>
-                        {images.slice(10).map((image, index) => (
+                        {images.slice(12).map((image, index) => (
                   <View key={index + 10}>
                       <TouchableOpacity onPress={() => openImageModal(index + 10)}>
                           <Image style={styles.images} source={{ uri: image.uri }} />

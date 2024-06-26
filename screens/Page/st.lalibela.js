@@ -24,7 +24,7 @@ function LalibelaComponent() {
                 <Image style={styles.images}
                             
                             source={{
-                                uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2Fimages.jpg?alt=media&token=8f6dfcc9-d86e-431f-89c1-b731903b5d8c',
+                                uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2FScreenshot%202024-141.png?alt=media&token=a09deae9-c3da-4fbf-a205-033ba9626603',
                             }}
                         />
             </TouchableHighlight>
@@ -32,7 +32,7 @@ function LalibelaComponent() {
                <Image style={styles.images}
                         
                         source={{
-                            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2FBete_Ghiorghis_(Huis_van_de_heilige_George)%2C_de_best_bewaard_gebleven_kerk_(6821637099).jpg?alt=media&token=608cb825-17b1-41d3-821b-440a5ed4f7b8',
+                            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2Fd8.jpg?alt=media&token=6dfca9c8-5892-4943-8603-285b24faf397',
                         }}
                     />
             </TouchableHighlight>
@@ -48,7 +48,7 @@ function LalibelaComponent() {
                 <Image style={styles.images}
                         
                         source={{
-                            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2Fimages%20(24).jpg?alt=media&token=5d85391b-1dd7-49e4-80af-bc7d6a542daa',
+                            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2FScreenshot%202024-06-26%20172210.png?alt=media&token=8d9c60ac-08d7-4289-b6c9-051009fb27e8',
                         }}
                     />
             </TouchableHighlight>
@@ -66,7 +66,7 @@ function LalibelaComponent() {
                 <Image style={styles.images}
                             
                             source={{
-                                uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2Fimages%20(19).jpg?alt=media&token=9368a858-2f17-48cc-a34f-8655f34592fb',
+                                uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2FScreenshot%202024-06-26%20646.png?alt=media&token=d9f0ed99-a3bb-4908-9fbc-e2b4d5a3ddde',
                             }}
                         /> 
                 </TouchableHighlight>
@@ -74,7 +74,7 @@ function LalibelaComponent() {
                     <Image style={styles.images}
                         
                         source={{
-                            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2Fimages%20(18).jpg?alt=media&token=7a44c901-2d49-4586-a25d-b7ff9810ecdf',
+                            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2FScreenshot%202024-06-26%201723.png?alt=media&token=6c95e938-0096-4658-9131-90799c9c1a5f',
                         }}
                     />
                 </TouchableHighlight>
@@ -82,7 +82,7 @@ function LalibelaComponent() {
                    <Image style={styles.images}
                         
                         source={{
-                            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2Fimages%20(16).jpg?alt=media&token=87989dc2-f156-4da8-b794-585ab73160ac',
+                            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2Fb3.jpg?alt=media&token=a473d943-d5e2-4a4b-bcf7-cf54175a844c',
                         }}
                     />
                 </TouchableHighlight>
@@ -90,7 +90,7 @@ function LalibelaComponent() {
                    <Image style={styles.images}
                         
                         source={{
-                            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/lalibela%2Fimages%20(12).jpg?alt=media&token=2c9b2ecd-7555-4760-81f3-35c8aaa5d6f0',
+                            uri: 'https://firebasestorage.googleapis.com/v0/b/lalibela-b39ae.appspot.com/o/newforall%2FScreenshot%202024-06-26%20173007.png?alt=media&token=d2d4c685-1ce4-40d7-8c53-f77c80e5834d',
                         }}
                     />  
                 </TouchableHighlight>
@@ -114,7 +114,7 @@ function Lalibela() {
   const Stack = createNativeStackNavigator();
   const insets = useSafeAreaInsets();
   return (
-    <View style={{ flex: 1 ,gap:10}}>
+    <View style={{ flex: 1 ,gap:10,marginBottom:70}}>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         
         <Stack.Screen name="menu" component={LalibelaComponent} />
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     width:200,
     height:200,
     resizeMode:"contain",
-    margin:10,
+    margin:0.5,
     backgroundColor:"black"
   },
 });
