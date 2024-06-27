@@ -18,13 +18,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff",
-        "config":  {"googleMapsApiKey": "aK8Pz3gxPWDdBAI5giCy3IdFVcBEpeaTJnvlueHLz2L2HHNPEYPmku1STE0r"
-      }
-    }
+        "config": {
+          "googleMapsApiKey": "aK8Pz3gxPWDdBAI5giCy3IdFVcBEpeaTJnvlueHLz2L2HHNPEYPmku1STE0r"
+        }
+      },
+      "package": "st.lalibela.application"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a0be6c00-20aa-4a5f-9b63-b7c09ad94784"
+      }
     }
   }
-  
 }
