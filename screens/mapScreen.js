@@ -44,6 +44,7 @@ export default function MapScreen() {
           longitude: 39.04487,
           latitudeDelta: 0.009,
           longitudeDelta: 0.009,
+
         }}
       >
         {userLocation && (
